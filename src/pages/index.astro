@@ -3,80 +3,79 @@ import Layout from '../layouts/Layouts.astro';
 ---
 
 <Layout title="Stuckenholz Zahntechnik">
-  <header>
-    <nav>
-      <img src="/images/logo.jpg" alt="Stuckenholz Zahntechnik Logo">
-      <ul>
-        <li><a href="#uber-uns">Über uns</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <img src="/logo.jpg" alt="Stuckenholz Zahntechnik Logo" class="h-12">
+      <ul class="flex space-x-6">
+        <li><a href="#uber-uns" class="text-gray-800 hover:text-blue-600">Über uns</a></li>
+        <li><a href="#kontakt" class="text-gray-800 hover:text-blue-600">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="willkommen">
-      <h1>Willkommen bei Stuckenholz Zahntechnik</h1>
-      <p>Seit Jahrzehnten schaffen wir höchste Qualität und patientenorientierte Lösungen in der Zahntechnik. Erleben Sie traditionelles Meisterhandwerk und neueste, innovativste Technik.</p>
-      <a href="#uber-uns" class="button">Über uns</a>
-      <div class="images">
-        <img src="/images/hero1.jpg" alt="Zahntechnik Arbeit" width="350" height="auto">
-        <img src="/images/hero2.jpg" alt="Zahnmodell" width="350" height="auto">
+  <main class="container mx-auto px-4">
+    <section id="willkommen" class="py-20">
+      <h1 class="text-4xl font-bold mb-6">Willkommen bei Stuckenholz Zahntechnik</h1>
+      <p class="text-xl mb-8">Seit Jahrzehnten schaffen wir höchste Qualität und patientenorientierte Lösungen in der Zahntechnik. Erleben Sie traditionelles Meisterhandwerk und neueste, innovativste Technik.</p>
+      <a href="#uber-uns" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Über uns</a>
+      <div class="grid grid-cols-2 gap-8 mt-12">
+        <img src="/hero1.jpg" alt="Zahntechnik Arbeit" class="w-full h-auto rounded-lg shadow-md">
+        <img src="/hero2.jpg" alt="Zahnmodell" class="w-full h-auto rounded-lg shadow-md">
       </div>
     </section>
 
-    <section id="techniken">
-      <h2>Techniken</h2>
-      <p>Innovative Zahntechnik für optimale Ergebnisse: Vom Implantat über Prothetik bis zur Kieferorthopädie. Wir kombinieren Handwerk, Kunst und Wissenschaft für Ihr strahlendes Lächeln.</p>
-      <div class="technik-liste">
-        <div class="technik-item">
-          <h3>Totalprothetik</h3>
+    <section id="techniken" class="py-20 bg-gray-100">
+      <h2 class="text-3xl font-bold mb-6 text-center">Techniken</h2>
+      <p class="text-xl mb-12 text-center">Innovative Zahntechnik für optimale Ergebnisse: Vom Implantat über Prothetik bis zur Kieferorthopädie. Wir kombinieren Handwerk, Kunst und Wissenschaft für Ihr strahlendes Lächeln.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Totalprothetik</h3>
           <p>Funktionaler und ästhetischer Zahnersatz für den zahnlosen Kiefer.</p>
         </div>
-        <div class="technik-item">
-          <h3>Kombinationsprothetik</h3>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Kombinationsprothetik</h3>
           <p>Ästhetisch hochwertiger herausnehmbarer Zahnersatz für die Teilprothetik.</p>
         </div>
-        <div class="technik-item">
-          <h3>Festsitzender Zahnersatz</h3>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Festsitzender Zahnersatz</h3>
           <p>Vollkeramische oder metallkeramische Kronen und Brücken zur Zahnrekonstruktion.</p>
         </div>
-        <div class="technik-item">
-          <h3>Kieferorthopädie</h3>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Kieferorthopädie</h3>
           <p>Korrigiert Zahn- und Kieferfehlstellungen effektiv.</p>
         </div>
-        <div class="technik-item">
-          <h3>3D-Druck</h3>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">3D-Druck</h3>
           <p>Additive Fertigungsverfahren für präzise zahnmedizinische Modelle und Apparaturen im vollvalidierten Prozess.</p>
         </div>
-        <div class="technik-item">
-          <h3>CAD/CAM-Technologie</h3>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">CAD/CAM-Technologie</h3>
           <p>Computergestützte Konstruktion und Fertigung von dentalen Restaurationen.</p>
         </div>
-        <div class="technik-item">
-          <h3>Implantat-Suprakonstruktionen</h3>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Implantat-Suprakonstruktionen</h3>
           <p>Prothetische Aufbauten für Implantate, individualisiert gestaltet.</p>
         </div>
-        <div class="technik-item">
-          <h3>Aufbissschienen</h3>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Aufbissschienen</h3>
           <p>Funktionstherapeutische Aufbissbehelfe bei Kiefergelengsbeschwerden oder Bruxismus.</p>
         </div>
       </div>
     </section>
 
-    <section id="uber-uns">
-      <h2>Über die Stuckenholz Zahntechnik GmbH</h2>
-      <p>Passion und Präzision im Herzen von Iserlohn.</p>
-      <p>In der Stuckenholz Zahntechnik GmbH verbinden wir traditionelles Handwerk mit modernster Technik. Jeder in unserem engagierten Team bringt seine individuelle Expertise ein, um Ihnen den besten Service und herausragenden Zahnersatz zu bieten. Wir schätzen den persönlichen Kontakt zu unseren Kunden und Patienten und arbeiten gerne mit Ihnen zusammen, um das beste Ergebnis für Ihr Lächeln zu erzielen.</p>
-      <div class="team-bilder">
-        <img src="/images/owner1.jpg" alt="Geschäftsführer 1">
-        <img src="/images/owner2.jpg" alt="Geschäftsführer 2">
+    <section id="uber-uns" class="py-20">
+      <h2 class="text-3xl font-bold mb-6 text-center">Über die Stuckenholz Zahntechnik GmbH</h2>
+      <p class="text-xl mb-8 text-center">Passion und Präzision im Herzen von Iserlohn.</p>
+      <p class="mb-8">In der Stuckenholz Zahntechnik GmbH verbinden wir traditionelles Handwerk mit modernster Technik. Jeder in unserem engagierten Team bringt seine individuelle Expertise ein, um Ihnen den besten Service und herausragenden Zahnersatz zu bieten. Wir schätzen den persönlichen Kontakt zu unseren Kunden und Patienten und arbeiten gerne mit Ihnen zusammen, um das beste Ergebnis für Ihr Lächeln zu erzielen.</p>
+      <div class="grid grid-cols-2 gap-8 mb-12">
+        <img src="/owner1.jpg" alt="Geschäftsführer 1" class="w-full h-auto rounded-full">
+        <img src="/owner2.jpg" alt="Geschäftsführer 2" class="w-full h-auto rounded-full">
       </div>
-      <div class="team-foto">
-        <img src="/images/team1.jpg" alt="Unser Team">
-      </div>
+      <img src="/team1.jpg" alt="Unser Team" class="w-full h-auto rounded-lg shadow-md">
     </section>
   </main>
 
+  <footer id="kontakt" class="bg-gray-800 text-white py-12">
   <footer>
     <div class="footer-content">
       <div class="company-info">
