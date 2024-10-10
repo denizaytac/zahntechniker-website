@@ -76,33 +76,36 @@ import Layout from '../layouts/Layouts.astro';
   </main>
 
   <footer id="kontakt" class="bg-gray-800 text-white py-12">
-  <footer>
-    <div class="footer-content">
-      <div class="company-info">
-        <h3>Stuckenholz Zahntechnik</h3>
-        <p>Seit 1947 setzen wir den Standard in der Zahntechnik in Iserlohn. Unser Team von neun Fachleuten, einschließlich mehrerer eigenen Auszubildenden, widmet sich der Herstellung qualitativ hochwertiger, individueller Produkte. Als ältestes zahntechnisches Labor in Iserlohn sind wir stolz auf unsere Tradition und unser Engagement für die Ausbildung.</p>
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="company-info">
+          <h3 class="text-xl font-bold mb-4">Stuckenholz Zahntechnik</h3>
+          <p class="text-sm">Seit 1947 setzen wir den Standard in der Zahntechnik in Iserlohn. Unser Team von neun Fachleuten, einschließlich mehrerer eigenen Auszubildenden, widmet sich der Herstellung qualitativ hochwertiger, individueller Produkte. Als ältestes zahntechnisches Labor in Iserlohn sind wir stolz auf unsere Tradition und unser Engagement für die Ausbildung.</p>
+        </div>
+        <div class="menu">
+          <h3 class="text-xl font-bold mb-4">Menü</h3>
+          <ul class="space-y-2">
+            <li><a href="#uber-uns" class="hover:text-blue-300">Über uns</a></li>
+            <li><a href="#kontakt" class="hover:text-blue-300">Kontakt</a></li>
+            <li><a href="#" class="hover:text-blue-300">Datenschutz</a></li>
+            <li><a href="#" class="hover:text-blue-300">Impressum</a></li>
+          </ul>
+        </div>
+        <div class="kontakt">
+          <h3 class="text-xl font-bold mb-4">Kontakt</h3>
+          <p>
+            Stuckenholz Zahntechnik GmbH<br>
+            Unnaer Str. 86, 58636 Iserlohn<br>
+            Tel: 02371/13435<br>
+            Fax: 02371/14496<br>
+            E-Mail: info@stuckenholz-zahntechnik.de
+          </p>
+        </div>
       </div>
-      <div class="menu">
-        <h3>Menü</h3>
-        <ul>
-          <li><a href="#uber-uns">Über uns</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-          <li><a href="#">Datenschutz</a></li>
-          <li><a href="#">Impressum</a></li>
-        </ul>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+        <p class="text-sm">&copy; 2023 Stuckenholz Zahntechnik GmbH</p>
+        <p class="text-sm mt-2">Website erstellt von: <a href="https://www.dentzytac.de/" class="hover:text-blue-300">www.dentzytac.de</a></p>
       </div>
-      <div class="kontakt">
-        <h3>Kontakt</h3>
-        <p>Stuckenholz Zahntechnik GmbH<br>
-        Unnaer Str. 86, 58636 Iserlohn<br>
-        Tel: 02371/13435<br>
-        Fax: 02371/14496<br>
-        E-Mail: info@stuckenholz-zahntechnik.de</p>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>&copy; 2023 Stuckenholz Zahntechnik GmbH</p>
-      <p>Website erstellt von: <a href="https://www.dentzytac.de/">www.dentzytac.de</a></p>
     </div>
   </footer>
 </Layout>
